@@ -1,0 +1,118 @@
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 5%;
+  text-align: center;
+}
+
+.form-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.or-option {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.text-field {
+  width: 80%;
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.text-field:focus {
+  border-color: #ff6f61; /* Coral */
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #ff6f61; /* Coral */
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #ffa69e; /* Coral Pink */
+}
+
+.image-preview {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-image {
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.file-name {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: #712c27; /* Coral */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #b47d78;
+  transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .text-field,
+  .file-label,
+  .submit-button {
+    width: calc(100% - 30px);
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .text-field,
+  .file-label,
+  .submit-button {
+    width: calc(100% - 20px);
+    margin-right: 10px;
+  }
+}

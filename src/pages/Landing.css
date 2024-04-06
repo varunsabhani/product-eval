@@ -1,0 +1,23 @@
+.landing-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.panelLeft {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-image: url(../Aisle.jpg);
+	background-repeat: no-repeat;
+	min-height: 91vh;
+	background-size: cover;
+  /* filter: blur(5px); */
+  z-index: -100;
+}
+.panelRight {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
