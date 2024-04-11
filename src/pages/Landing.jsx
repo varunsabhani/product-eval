@@ -1,17 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AutoTyping from './AutoTyping'
 import FormComponent from './FormComponent'
 import './Landing.css';
 
-const Landing = () => {
 
-  return (
+const Landing = () => {
+  
+  const [autoType, setautoType] = useState([])  
+  return (  
     <div className="landing-page">
-      <div className="panelLeft">
-        <AutoTyping />
-      </div>
+      
+        {
+          (autoType) ? <div className="panelLeft"> <AutoTyping />  </div> : ""
+        
+     
+        }
+      
       <div className="panelRight">
-        <FormComponent />
+        <FormComponent  />
       </div>
     </div>
   )

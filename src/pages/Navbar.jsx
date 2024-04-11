@@ -16,14 +16,10 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="brand">PRODUCT-EVAL</div>
-        <ul className="nav-links">
-          <li><a href="#">Home</a></li>
-          {loggedIn ? (
-            <li><a href="#" onClick={handleLogout}>Logout</a></li>
-          ) : (
-            <li><a href="#" onClick={handleLogin}>Login</a></li>
-          )}
-        </ul>
+        {/* <ul className="nav-links">
+          <li><a href="" >Home</a></li>
+          
+        </ul> */}
       </div>
     </nav>
   );
